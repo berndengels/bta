@@ -49,7 +49,7 @@ return [
          'globalThrottle'                => true,
          'globalThrottleLimit'           => 20,
          'globalThrottleDurationMinutes' => 30,
-         'toEmailAddress'                => explode(',', env('EXCEPTION_TO_EMAIL_ADDRESS', null)) ?? null,
+         'toEmailAddress'                => explode(',', env('EXCEPTION_TO_EMAIL_ADDRESS')) ?? null,
          'fromEmailAddress'              => env('EXCEPTION_FROM_EMAIL_ADDRESS', null),
          'emailSubject'                  => env('EXCEPTION_EMAIL_SUBJECT', null),
         ],
