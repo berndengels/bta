@@ -40,7 +40,6 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
  * @method static Builder|Permission whereId($value)
  * @method static Builder|Permission whereName($value)
  * @method static Builder|Permission whereUpdatedAt($value)
- * @mixin Eloquent
  * @method static Builder|Permission filter(?string $name = null)
  * @method static PermissionFactory factory(...$parameters)
  * @method static Builder|Permission filterDateFrom(?string $name = null, $value = null)
@@ -48,6 +47,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
  * @method static Builder|Permission likeFilter(?string $name = null, $value = null)
  * @method static Builder|Permission filterMonth(?string $name = null, $value = null)
  * @method static Builder|Permission filterYear(?string $name = null, $value = null)
+ * @mixin Eloquent
  */
 class Permission extends BaseModel
 {

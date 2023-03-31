@@ -9,7 +9,7 @@
                 <x-btn-create route="{{ route('admin.jobcenters.create') }}" />
             </div>
             <div class="float-end">
-                <x-search-filter name="name" action="{{ route('admin.jobcenters.index') }}" placeholder="Suche Jobcenter" />
+                <x-search-filter name="postcode" method="post" action="{{ route('admin.jobcenters.search') }}" placeholder="Suche Jobcenter" />
             </div>
         </div>
         {{ $data->links() }}

@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
-use Debugbar;
+use Barryvdh\Debugbar\Facades\Debugbar;
 
 class AppServiceProvider extends ServiceProvider
 {

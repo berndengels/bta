@@ -26,6 +26,7 @@
         "@fullcalendar/timegrid": "^6.1.4",
         "@vitejs/plugin-basic-ssl": "^1.0.1",
         "echarts": "^5.4.1",
+        "puppeteer": "^19.8.0",
         "toastr": "^2.1.4"
     }
 }

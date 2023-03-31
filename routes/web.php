@@ -6,21 +6,6 @@ use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-/*
-Route::get('/', function () {
-    return view('welcome');
-});
-*/
 Route::get('/', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -38,6 +23,7 @@ Route::group([
     Route::resource('roles', RoleController::class);
     Route::resource('permissions', PermissionController::class);
     Route::resource('jobcenters', JobcenterController::class);
+    Route::post('jobcenters', [JobcenterController::class, 'search'])->name('jobcenters.search');
 });
 
 require __DIR__.'/auth.php';

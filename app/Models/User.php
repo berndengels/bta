@@ -44,6 +44,15 @@ use Spatie\Permission\Traits\HasRoles;
  * @method static Builder|User wherePassword($value)
  * @method static Builder|User whereRememberToken($value)
  * @method static Builder|User whereUpdatedAt($value)
+ * @property-read mixed $str_roles
+ * @property-read DatabaseNotificationCollection<int, DatabaseNotification> $notifications
+ * @property-read Collection<int, \Spatie\Permission\Models\Permission> $permissions
+ * @property-read int|null $permissions_count
+ * @property-read Collection<int, \Spatie\Permission\Models\Role> $roles
+ * @property-read int|null $roles_count
+ * @property-read Collection<int, PersonalAccessToken> $tokens
+ * @method static Builder|User permission($permissions)
+ * @method static Builder|User role($roles, $guard = null)
  * @mixin Eloquent
  */
 class User extends Authenticatable
